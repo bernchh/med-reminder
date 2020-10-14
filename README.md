@@ -79,6 +79,13 @@ Type below to install Redis and Ngrok on macOS:
 
 1. SMS to the Twilio phone number you have specified and watch the magic happen!
 
+```
+Commands Available:
+1. List
+2. Remind <medicine> <dosage per day (1-5)> <how many days>. E.g. Remind Paracetamol 2 3
+3. Delete <medicine>
+```
+
 ## Also Recommended
 
 * [Redis Commander](https://github.com/joeferner/redis-commander), an open-source web management tool to manage Redis
