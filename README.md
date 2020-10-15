@@ -66,7 +66,7 @@ Type below to install Redis and Ngrok on macOS:
     
 1. Copy the ngrok public url shown in your terminal. It should look similar to the example below. 
 
-        Session Status                 online
+        Session Status                online
         Version                       2.3.35
         Web Interface                 http://127.0.0.1:4040
         Forwarding                    http://92832de0.ngrok.io -> localhost:8080
