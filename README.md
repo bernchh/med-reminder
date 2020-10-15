@@ -54,6 +54,7 @@ Type below to install Redis and Ngrok on macOS:
     `rq worker --with-scheduler`
 
 1. Run the web app:
+
     `python app.py`
 
 1. Open the app in your [browser](http://localhost:8080/).
