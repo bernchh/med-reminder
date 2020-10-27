@@ -1,6 +1,6 @@
 # Welcome to the med-reminder App!
 
-This project allows you to schedule and receive reminders on medication via SMS. The app was developed for Twilio App Bootcamp and is written in Python using [Flask](http://flask.pocoo.org/) and [RQ](https://python-rq.org/).
+This project allows you to schedule and receive reminders to take your medication via SMS. The app was developed for Twilio App Bootcamp and is written in Python using [Flask](http://flask.pocoo.org/) and [RQ](https://python-rq.org/).
 
 ## Setting Up
 
@@ -39,6 +39,7 @@ Type below to install Redis and Ngrok on macOS:
 1. From there we recommend creating a [virtualenv](https://docs.python.org/3/library/venv.html) and activating it to avoid installing dependencies globally on your computer.
 
     `virtualenv -p med-reminder env`
+    
     `source env/bin/activate`
 
 1. Install dependencies:
