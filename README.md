@@ -1,6 +1,6 @@
 # Welcome to the med-reminder App!
 
-This project allows you to schedule and receive reminders on medication via SMS. The app was developed for Twilio App Bootcamp and is written in Python using [Flask](http://flask.pocoo.org/) and [RQ](https://python-rq.org/).
+This project allows you to schedule and receive reminders to take your medication via SMS. The app was developed for Twilio App Bootcamp and is written in Python using [Flask](http://flask.pocoo.org/) and [RQ](https://python-rq.org/).
 
 ## Setting Up
 
@@ -39,6 +39,7 @@ Type below to install Redis and Ngrok on macOS:
 1. From there we recommend creating a [virtualenv](https://docs.python.org/3/library/venv.html) and activating it to avoid installing dependencies globally on your computer.
 
     `virtualenv -p med-reminder env`
+    
     `source env/bin/activate`
 
 1. Install dependencies:
@@ -54,6 +55,7 @@ Type below to install Redis and Ngrok on macOS:
     `rq worker --with-scheduler`
 
 1. Run the web app:
+
     `python app.py`
 
 1. Open the app in your [browser](http://localhost:8080/).
@@ -66,7 +68,7 @@ Type below to install Redis and Ngrok on macOS:
     
 1. Copy the ngrok public url shown in your terminal. It should look similar to the example below. 
 
-        Session Status                 online
+        Session Status                online
         Version                       2.3.35
         Web Interface                 http://127.0.0.1:4040
         Forwarding                    http://92832de0.ngrok.io -> localhost:8080
@@ -78,6 +80,13 @@ Type below to install Redis and Ngrok on macOS:
 1. Go to the [Twilio Console](https://www.twilio.com/console/phone-numbers/incoming) to configure your Twilio phone number to make a request to your public url when a message comes in.
 
 1. SMS to the Twilio phone number you have specified and watch the magic happen!
+
+```
+Commands Available:
+1. List
+2. Remind <medicine> <dosage per day (1-5)> <how many days>. E.g. Remind Paracetamol 2 3
+3. Delete <medicine>
+```
 
 ## Also Recommended
 
