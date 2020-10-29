@@ -1,11 +1,12 @@
 from datetime import datetime, timedelta
-import redis
+import redis, os
 from rq import Queue, cancel_job
 from rq.registry import ScheduledJobRegistry
 
 from sms import send_text_reminder
 
-r = redis.Redis()
+redis_url = os.getenv('REDISTOGO_URL', 'redis://localhost:6379')
+r = redis.from_url(redis_url)
 queue = Queue(connection=r)
 
 
